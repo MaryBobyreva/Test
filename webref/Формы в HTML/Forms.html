@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text">
+	<input type="checkbox">
+	<input type="radio">
+
+	<form action="Forms.html" method="POST">
+		<input type="text">
+		<input type="email">
+		<input type="password">
+	</form>
+		<input type="number">
+		<input type="tel">
+		<textarea>Hi there</textarea>
+		<input type="text" placeholder="Введите свое имя">
+		<label>email</label>
+		<input type="email">
+		<label for="first_name"> Имя </label>
+		<input id="first_name" type="text">
+	<br>
+	<input type="checkbox"> Запомнить меня
+	<br>
+	<label>
+		<input type="checkbox"> Я принимаю все
+	</label>
+	<br>
+	<label>
+	<input type="checkbox" checked> Согласен на все
+</label>
+<br>
+
+
+<label> 	Семейное положение </label>
+<label>
+	<input type="radio" name="status"> 
+	Холост
+</label>
+<label>
+	<input type="radio" name="status">
+	Женат
+</label>
+<label> 
+	<input type="radio" name="status">
+	Разведён
+</label>
+<label>
+	<input type="radio" name="status">
+	Вдовец
+</label>
+<br>
+<select>
+	<option>Январь</option>
+	<option>Февраль</option>
+	<option>Март</option>
+	<option>Апрель</option>
+	<option>Июнь</option>
+	<option>Июль</option>
+	<option>Август</option>
+	<option>Сентябрь</option>
+	<option>Октяюрь</option>
+	<option>Ноябь</option>
+	<option>Декабрь</option>
+</select>
+
+<br>
+
+<label>Какими браузерами вы пользуетесь?</label>
+<select multiple>
+	<option>Google Chrome </option>
+	<option>Internet Explorer </option>
+	<option>Opera </option>
+	<option>Safari </option>
+</select>
+
+
+<br>
+
+<form action="/signup" method="POST">
+<p>
+	<label>
+		Обращение
+	</label>
+	<label>
+		<input type="radio" name="title" value="mr">
+		Г-н
+	</label>
+	<label>
+		<input type="radio" name="title" value="mrs">
+		Г-жа
+	</label>
+</p>
+<p>
+<label> Имя </label>
+<input type="text" name="first_name">
+</p>
+<p>
+	<label> Фамилия </label>
+	<input type="text" name="last_name">
+</p>
+<P>
+	<label>Email</label>
+	<input type="email" name="email">
+</P>
+<p>
+	<label> Телефон</label>
+	<input type="tel" name="phone">
+</p>
+<p>
+	<label>Пароль</label>
+	<input type="password" name="password">
+</p>
+<p>
+	<label>Подтвердите пароль</label>
+	<input type="password" name="password_confirm">
+</p>
+<p>
+	<label>Страна</label>
+	<select name="Country">
+		<option>Канада </option>
+		<option>Франция</option>
+		<option>Германия</option>
+		<option>Италия</option>
+		<option>Япония</option>
+		<option>Россия</option>
+		<option>США</option>
+		<option>Великобритания</option>
+	</select>
+</p>
+<p>
+	<label>
+		<input type="checkbox" name="terms">
+		Я согласен с <a href="/terms">условиями использования</a>
+	</label>
+</p>
+<p>
+	<button>
+		Зарегистрироваться
+	</button>
+</p>
+</form>
+</body>
+</html>
+
