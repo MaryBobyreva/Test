@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Списки</title>
+</head>
+<body>
+	<form>
+		<select name="day">
+			<option value="mon">Понедельник</option>
+			<option value="tue">Вторник</option>
+			<option value="wed" selected>Среда</option>
+			<option value="thu">Четверг</option>
+			<option value="fri">Пятница</option>
+			<option value="sat">Суббота</option>
+			<option value="sun">Воскресенье</option>
+		</select>
+	</form>
+
+
+	<p>Новый список </p>
+	<!--Для того. чтобы сгруппировать списки по группам используют <Optgroup>-->
+		<form>
+			<select name="food">
+				<optgroup label="Русская кухня">
+					<option value="r1"> Закуска Барская</option>
+					<option value="r2">Раки, фаршированные по-царски</option>
+					<option value="r3">Биточки в горшочке</option>
+				</optgroup>
+				<optgroup label="Украинская кухня">
+					<option value="u1">Галушки славянские</option>
+					<option value="u2">Пампушки украинские</option>
+					<option value="u3">Жаркое по-харьковски</option>
+				</optgroup>
+			</select>
+			<p><input type="submit" name="Отправить"</p>
+		</form>
+</body>
+</html>
