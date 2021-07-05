@@ -1,0 +1,16 @@
+.date {
+	color: red;
+}
+#tagline {
+ color: orange;
+}
+em.date
+{
+	color: blue;
+}
+header a{
+	color: burlywood;
+}
+a:hover{
+	color: crimson;
+}
