@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Формы</title>
+</head>
+<body>
+  <form action="/" method="post" class="main-form">
+    <fieldset> 
+      <legend>Личные данные</legend>
+    <div class="form">
+      <div class="form-registration">
+        <label for="male">Муж</label>
+        <input type="radio" name="select_male" value="male" id="male" checked>
+        <label for="female">Жен</label>
+        <input type="radio" name="select_male" value="female" id="female">
+    </div>
+    <div class="form-registration">
+      <input type="text" name="name" class="form-input" placeholder="Ваше имя">
+    </div>
+    <div class="form-registration">
+      <input type="email" name="email" class="form-input" placeholder="Ваш e-mail">
+    </div>
+    <div class="form-registration">
+      <input type="tel" name="tel" class="form-input" placeholder="Ваш телефон">
+    </div>
+    <div class="form-registration">
+      <input type="text" name="adress" class="form-input" placeholder="Ваш адрес">
+    </div>
+    <div class="form-registration">
+      <textarea name="info" id="" class="form-textarea" placeholder="Информация о вас"></textarea>
+    </div>
+  </div>
+    </fieldset>
+
+    <fieldset >
+      <legend>Безопасность</legend>
+      <div class="form">
+        <div class="form-registration">
+          <input type="password" name="old-password" class="form-input" id="" placeholder="Старый пароль">
+        </div>
+        <div class="form-registration">
+          <input type="password" name="new-password" class="form-input" id="" placeholder="Новый пароль">
+        </div>
+        <div class="form-registration">
+          <input type="password" name="repeat-password" class="form-input" id="" placeholder="Новый пароль еще раз">
+        </div>
+        <div class="form-registration" >
+          <select name="question" id="" class="form-select">
+            <option value="secret">Секретный вопрос</option>
+            <option value="kode-word">Как зовут твою маму?</option>
+          </select>
+        </div>
+        <div class="form-registration">
+            <input type="text" name="answer" class="form-input" placeholder="Ответ на секретный вопрос">
+        </div>
+    </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Оповещения</legend>
+      <div class="form">
+      <div class="form-registration">
+        <p><input type="checkbox" class="form-checkbox" id="get-news" checked>
+        <label for="get-news">Получать новости по e-mail</label></p>
+        <p><input type="checkbox" class="form-checkbox" id="get-discount" checked>
+        <label for="get-discount">Получать информацию о скидках</label></p>
+      </div>
+      <div class="form-registration">
+        <button type="submit" class="btn submit">Сохранить</button>
+        <button type="reset" class="btn reset">Отменить и очистить</button>
+      </div>
+    </div>
+
+    </fieldset>
+  </form>
+</body>
+</html>
