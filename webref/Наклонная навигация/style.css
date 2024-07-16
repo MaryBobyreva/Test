@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    margin: 50px auto;
+}
+
+.nav-link {
+    padding: 15px 35px;
+    margin: 0 2px;
+
+    background-color: #5868e1;
+    color: #fff;
+    text-decoration: none;
+
+    transform: skewX(-45deg);
+}
+
+.nav-link:hover {
+    background-color: #2f40c1;
+}
+
+.nav-text {
+    display: block;
+    transform: skewX(45deg);
+}
