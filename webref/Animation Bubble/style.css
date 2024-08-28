@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.page {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.bubble {
+    width: 300px;
+    height: 300px;
+
+    background-image: linear-gradient(45deg, #7b076a, #350bce);
+    opacity: .8;
+
+    animation: Bubble 5s infinite alternate ease-in-out;
+}
+
+.bubble-2 {
+    width: 200px;
+    height: 200px;
+
+    background-image: linear-gradient(45deg, #e067d4, #4bdeee);
+    opacity: .8;
+
+    animation: Bubble-2 5s infinite alternate ease-in-out;
+
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+}
+
+
+@keyframes Bubble {
+    from {
+        border-radius: 50% 30% 50% 50% / 53% 23% 34% 22%;  
+        transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+    to {
+        border-radius: 12% 42% 40% 46% / 19% 28% 75% 23%;  
+        transform: translate3d(-100px, 200px, 0) rotate(45deg);
+    }
+}
+
+@keyframes Bubble-2 {
+    from {
+        border-radius: 50% 50% 50% 50% / 22% 45% 76% 89%;  
+        transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+    to {
+        border-radius: 23% 45% 12% 44% / 55% 87% 12% 43%;  
+        transform: translate3d(70px, -100px, 0) rotate(90deg);
+    }
+}
+
